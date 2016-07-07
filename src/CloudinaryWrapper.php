@@ -97,10 +97,8 @@ class CloudinaryWrapper
      */
     public function __call($methodName, $arguments)
     {
-        if (method_exists($this->getCloudinary, $methodName)) {
+        if (method_exists($this->getUploader(), $methodName)) {
             return $this->getUploader()->$methodName($arguments);
         }
-
-        return $this->getCloudinary()->$methodName($arguments);
     }
 }
