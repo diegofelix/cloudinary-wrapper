@@ -61,7 +61,7 @@ class CloudinaryWrapper
      */
     public function upload($source, $tags = array())
     {
-        return $this->getUploader()->upload($source, $options);
+        return $this->getUploader()->upload($source, $tags);
     }
 
     /**
