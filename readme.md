@@ -19,7 +19,7 @@ composer require diegofelix/cloudinary
 For your Laravel app, open `config/app.php` and, within the `providers` array, append:
 
 ```
-Laracasts\DiegoFelix\CloudinaryServiceProvider::class
+DiegoFelix\CloudinaryServiceProvider::class
 ```
 
 This will bootstrap the package into Laravel.
@@ -42,9 +42,9 @@ Now that the package was installed, you can use any of the methods that cloudina
 > Have a look at [Cloudinary documentation](http://cloudinary.com/documentation/php_integration).
 
 ```php
-Cloudinary::upload("/home/my_image.jpg", $options);
+CloudinaryWrapper::upload("/home/my_image.jpg", $options);
 ```
 
 ```php
-Cloudinary::show("my_image.jpg", $options);
+CloudinaryWrapper::show("my_image.jpg", $options);
 ```

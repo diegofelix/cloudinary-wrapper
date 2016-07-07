@@ -12,7 +12,7 @@ class CloudinaryWrapperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(CloudinaryWrapper::class, function($app) {
+        $this->app->singleton('cloudinarywrapper', function($app) {
             return new CloudinaryWrapper(
                 env('CLOUDINARY_NAME'),
                 env('CLOUDINARY_KEY'),
