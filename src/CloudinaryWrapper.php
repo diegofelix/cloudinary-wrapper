@@ -87,18 +87,4 @@ class CloudinaryWrapper
     {
         return $this->getUploader()->destroy($publicId, $options);
     }
-
-    /**
-     * Overlaod the cloudinary methods
-     *
-     * @param  string $methodName
-     * @param  mixed $arguments
-     * @return mixed
-     */
-    public function __call($methodName, $arguments)
-    {
-        if (method_exists($this->getUploader(), $methodName)) {
-            return $this->getUploader()->$methodName($arguments);
-        }
-    }
 }
