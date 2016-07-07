@@ -1,0 +1,23 @@
+{
+    "name": "diegofelix/cloudinary-wrapper",
+    "description": "A Simple Cloudinary Wrapper for Laravel ^5.2",
+    "keywords": ["laravel", "laravel5", "cloudinary", "image", "upload"],
+    "homepage": "https://github.com/diegofelix/cloudinary-wrapper",
+    "require": {
+        "illuminate/support": "^5.2",
+        "cloudinary/cloudinary_php": "^1.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Felix",
+            "email": "diegoflx.oliveira@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "DiegoFelix\\CloudinaryWrapper\\": "src"
+        }
+    }
+}
