@@ -1,10 +1,10 @@
 <?php
 
-namespace DiegoFelix\ClaudinaryWrapper;
+namespace DiegoFelix\CloudinaryWrapper;
 
 use Illuminate\Support\Facades\Facade;
 
-class ClaudinaryWrapperFacade extends Facade
+class CloudinaryWrapperFacade extends Facade
 {
     /**
      * Get the registered name of the component.
