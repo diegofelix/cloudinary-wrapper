@@ -2,7 +2,7 @@
 
 namespace DiegoFelix\CloudinaryWrapper;
 
-use DiegoFelix\CloudinaryWrapper;
+use DiegoFelix\CloudinaryWrapper\CloudinaryWrapper;
 use Illuminate\Support\ServiceProvider;
 
 class CloudinaryWrapperServiceProvider extends ServiceProvider
