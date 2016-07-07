@@ -11,7 +11,7 @@ CloudinaryWrapper is a package for Laravel ^5.2 that provides simple wrapper for
 From the command line, run:
 
 ```
-composer require diegofelix/cloudinary
+composer require diegofelix/cloudinary-wrapper
 ```
 
 ### Step 2: Service Provider
@@ -19,17 +19,17 @@ composer require diegofelix/cloudinary
 For your Laravel app, open `config/app.php` and, within the `providers` array, append:
 
 ```
-DiegoFelix\CloudinaryServiceProvider::class
+DiegoFelix\CloudinaryWrapper\CloudinaryWrapperServiceProvider::class,
 ```
 
 This will bootstrap the package into Laravel.
 
 ### Step 3: .env
 
-For this package works, you must create thre env variables in your `.env` file.
+For this package works, you must create three .env variables in your `.env` file.
 
 ```
-CLOUDINARY_NAME=yourname
+CLOUDINARY_NAME=appname
 CLOUDINARY_KEY=yourkey
 CLOUDINARY_SECRET:yoursecret
 ```
@@ -48,3 +48,16 @@ CloudinaryWrapper::upload("/home/my_image.jpg", $options);
 ```php
 CloudinaryWrapper::show("my_image.jpg", $options);
 ```
+
+To access the original Cloudinary methods you can access using the following methods:
+
+```php
+CloudinaryWrapper::getCloudinary();
+CloudinaryWrapper::getUploader();
+```
+
+They will give you the main instances for Cloudinary.
+
+## Tests and Contribute
+
+This simple package has no tests, so if you want to help with testing and cover other methods of cloudinary I appreciate it!
